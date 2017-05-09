@@ -30,6 +30,7 @@
 
 #ifdef OSTYPE_Linux
 #include "acpi.h"
+#include "amdgpuinfo.h"
 #include "apm.h"
 #include "cpuinfo.h"
 #include "diskstat.h"
@@ -125,6 +126,7 @@ typedef int (*IVFunc)( void );
 struct SensorModul SensorModulList[] = {
 #ifdef OSTYPE_Linux
   { "Acpi", initAcpi, exitAcpi, updateAcpi, NULLVVFUNC, 0, NULLTIME },
+  { "AmdGpuInfo", initAmdGpuInfo, exitAmdGpuInfo, updateAmdGpuInfo, NULLVVFUNC, 0, NULLTIME },
   { "Apm", initApm, exitApm, updateApm, NULLVVFUNC, 0, NULLTIME },
   { "CpuInfo", initCpuInfo, exitCpuInfo, updateCpuInfo, NULLVVFUNC, 0, NULLTIME },
   { "DellLaptop", initI8k, exitI8k, updateI8k, NULLVVFUNC, 0, NULLTIME },

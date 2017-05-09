@@ -68,6 +68,7 @@ void parseConfigFile( const char *filename )
       available sensors manually
      */
     push_ctnr( SensorList, strdup( "Acpi" ) );
+    push_ctnr( SensorList, strdup( "AmdGpuInfo" ) );
     push_ctnr( SensorList, strdup( "Apm" ) );
     push_ctnr( SensorList, strdup( "CpuInfo" ) );
     push_ctnr( SensorList, strdup( "DellLaptop" ) );

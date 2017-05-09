@@ -6,6 +6,7 @@ LogFiles=messages:/var/log/messages,kern:/var/log/kern.log,daemon:/var/log/daemo
 # Sensors: the list of all accessible sensors
 #	Apm             Advanced Power Management
 #	Acpi            Advanced Configuration and Power Interface
+#	AmdGpuInfo      AMDGPU information
 #	CpuInfo         CPU-Clock information
 #	DiskStat        partition space. Data comes from mtab, getmntent() and statfs()
 #	DiskStats       disk throughput. Data comes from /etc/diskstats
@@ -19,4 +20,4 @@ LogFiles=messages:/var/log/messages,kern:/var/log/kern.log,daemon:/var/log/daemo
 #	SoftRaid	Monitors software raid devices. See mdadm.
 #	Stat            interrupts, CPU and disk throughput. Data comes from /etc/stat
 #	Uptime          System uptime. Data comes from /etc/uptime
-Sensors=ProcessList,Memory,Stat,NetDev,NetStat,Apm,Acpi,CpuInfo,LoadAvg,LmSensors,DiskStat,LogFile,DiskStats,Uptime,SoftRaid
+Sensors=ProcessList,Memory,Stat,NetDev,NetStat,Apm,Acpi,CpuInfo,LoadAvg,LmSensors,DiskStat,LogFile,DiskStats,Uptime,SoftRaid,AmdGpuInfo
