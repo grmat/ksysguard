@@ -6,4 +6,16 @@ other remote system with the KSysGuard daemon (ksysgardd) installed.
 Currently the daemon has been ported to Linux, FreeBSD, Irix, NetBSD,
 OpenBSD, Solaris and Tru64 with varying degrees of completion.
 
+-------------
+
+# amdgpu
+
+![screenshot](screenshot.png)
+
+## Features
+- read dpm states and corresponding clocks for GPU and graphics memory
+- read "overdrive" (overclocking) values
+
+## TODOs
+- support for multiple GPUs
 
